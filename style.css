@@ -1,0 +1,231 @@
+/* Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* Banner Utama (Hero) */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('A.jpeg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e05353;
+}
+
+/* Grid Produk */
+.products {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price {
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-buy {
+    background-color: #4ecdc4;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #3dbbb3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+/* ==========================================
+   CSS UNTUK FILTER KATEGORI & PRODUK
+   ========================================== */
+
+/* Wadah Tombol Filter */
+.category-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0 40px 0;
+    flex-wrap: wrap;
+}
+
+/* Desain Tombol Filter */
+.filter-btn {
+    background-color: #f0f0f0;
+    color: #555;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Efek Tombol Saat Disorot (Hover) & Aktif */
+.filter-btn.active, 
+.filter-btn:hover {
+    background-color: #ff6b6b;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Efek Animasi Kartu Produk */
+.product-card {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Class 'hide' dipicu JavaScript untuk menyembunyikan produk */
+.product-card.hide {
+    display: none;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+/* Desain Gambar Produk Menggunakan URL Background */
+.product-img {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Link Gambar Asli dari Unsplash */
+.img-hewan-kucing { background-image: url('k.jpeg'); }
+.img-hewan-anjing { background-image: url('j.jpeg'); }
+.img-hewan-anjing1 { background-image: url('ajg.jpeg'); }
+.img-hewan-cicak { background-image: url('cicak.jpeg'); }
+.img-hewan-ayam { background-image: url('ayam adidas.jpeg'); }
+.img-food-anjing { background-image: url('makanan_ajg.jpeg'); }
+.img-food-kucing { background-image: url('makanan-kucing.jpeg'); }
+.img-food-cicak { background-image: url('makanan-cicak.jpeg'); }
+.img-food-kucing1 { background-image: url('makanan-kucing1.jpeg'); }
+.img-acc-gunting { background-image: url('gunting.jpeg'); }
+.img-acc-bola{ background-image: url('bola.jpeg'); }
+.img-acc-kalung { background-image: url('kalung.jpeg'); }
+.img-acc-alat { background-image: url('alat-mkn.jpeg'); }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Kami - PetShopku</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Khusus Tambahan untuk Halaman Layanan */
+        .services-section {
+            padding: 50px 8%;
+            text-align: center;
+        }
+        .services-section h1 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .services-section p.subtitle {
+            color: #777;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-top: 5px solid #4ecdc4;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .service-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .service-card h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .service-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .btn-booking {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-booking:hover {
+            background-color: #e05353;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="logo">🐾 PetShopku</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="layanan.html" class="active" style="color: #ff6b6b;">Layanan</a></li>
+                <li><a href="https://www.instagram.com/rmfnnd?igsh=MW55bXk2b3RvZXhodA==">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten Layanan Utama -->
+    <section class="services-section">
+        <h1>Layanan Perawatan Hewan</h1>
+        <p class="subtitle">Kami memberikan kasih sayang dan perawatan profesional terbaik untuk hewan kesayangan Anda</p>
+
+        <div class="services-grid">
+            
+            <!-- Layanan 1 -->
+            <div class="service-card" style="border-top-color: #4ecdc4;">
+                <div class="service-icon">✂️</div>
+                <h3>Pet Grooming</h3>
+                <p>Mandi bersih, potong bulu rapi, potong kuku, membersihkan telinga, dan pemberian vitamin bulu agar anabul bebas kutu dan jamur.</p>
+                <button class="btn-booking">Pesan Jadwal</button>
+            </div>
+
+            <!-- Layanan 2 -->
+            <div class="service-card" style="border-top-color: #ffb8b8;">
+                <div class="service-icon">🏨</div>
+                <h3>Pet Hotel (Penitipan)</h3>
+                <p>Fasilitas penitipan hewan yang bersih, nyaman, ber-AC, dilengkapi dengan pengawasan 24 jam dan waktu bermain harian yang terjadwal.</p>
+                <button class="btn-booking">Pesan Kamar</button>
+            </div>
+
+            <!-- Layanan 3 -->
+            <div class="service-card" style="border-top-color: #ffbe42;">
+                <div class="service-icon">🩺</div>
+                <h3>Pemeriksaan Kesehatan</h3>
+                <p>Konsultasi dokter hewan, pemberian vaksinasi rutin, obat cacing, serta cek kesehatan berkala agar anabul selalu aktif dan ceria.</p>
+                <button class="btn-booking">Hubungi Dokter</button>
+            </div>
+
+            <!-- Layanan 4 -->
+            <div class="service-card" style="border-top-color: #6c5ce7;">
+                <div class="service-icon">🚗</div>
+                <h3>Pet Antar Jemput</h3>
+                <p>Layanan transportasi aman untuk menjemput anabul dari rumah Anda menuju ke pet shop kami untuk grooming atau penitipan, dan sebaliknya.</p>
+                <button class="btn-booking">Pesan Jemputan</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 PetShopku. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

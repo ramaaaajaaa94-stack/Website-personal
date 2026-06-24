@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk - PetShopku</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Khusus Tambahan untuk Halaman Produk */
+        .category-filter {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            background-color: #eee;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 40px;
+        }
+        .page-link {
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .page-link.active, .page-link:hover {
+            background-color: #ff6b6b;
+            color: white;
+            border-color: #ff6b6b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="logo">🐾 PetShopku</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="produk.html" class="active" style="color: #ff6b6b;">Produk</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="https://www.instagram.com/rmfnnd?igsh=MW55bXk2b3RvZXhodA==">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Judul Halaman -->
+    <section class="products">
+        <h1>Katalog Semua Produk</h1>
+        <p>Temukan makanan dan perlengkapan terbaik untuk hewan kesayangan Anda</p>
+
+
+     <!-- Filter Kategori (Ganti baris 75-79 Anda menjadi seperti ini) -->
+<div class="category-filter">
+    <button class="filter-btn active" data-target="all">Semua</button>
+    <button class="filter-btn" data-target="makanan">Makanan</button>
+    <button class="filter-btn" data-target="aksesoris">Aksesoris</button>
+    <button class="filter-btn" data-target="hewan">Hewan</button>
+</div>
+
+<!-- Grid Produk Lengkap -->
+<div class="product-grid">
+    
+    <!-- Produk 1 (Baris 83 - Pastikan kategorinya hewan jika itu hewan) -->
+    <div class="product-card" data-category="hewan">
+        <div class="product-img img-hewan-kucing"></div>
+        <h3>Kucing happy</h3>
+        <p class="price">Adopsi Resmi</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+        <div class="product-card" data-category="hewan">
+        <div class="product-img img-hewan-anjing"></div>
+        <h3>Anjing langka abad 18</h3>
+        <p class="price">Adopsi Resmi</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+            <div class="product-card" data-category="hewan">
+        <div class="product-img img-hewan-anjing1"></div>
+        <h3>Anjing ninja</h3>
+        <p class="price">Adopsi Resmi</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+
+            <div class="product-card" data-category="hewan">
+        <div class="product-img img-hewan-ayam"></div>
+        <h3>Aayam adidas</h3>
+        <p class="price">Adopsi Resmi</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+                <div class="product-card" data-category="hewan">
+        <div class="product-img img-hewan-cicak"></div>
+        <h3>cicak pak slamet</h3>
+        <p class="price">Adopsi Resmi</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+
+    <!-- Produk 2 (Baris 91 - Pastikan kategorinya makanan) -->
+    <div class="product-card" data-category="makanan">
+        <div class="product-img img-food-anjing"></div>
+        <h3>Makanan Anjing Sehat</h3>
+        <p class="price">Rp 80.000</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+        <div class="product-card" data-category="makanan">
+        <div class="product-img img-food-kucing"></div>
+        <h3>snack kucing premium</h3>
+        <p class="price">Rp 45.000</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+            <div class="product-card" data-category="makanan">
+        <div class="product-img img-food-cicak"></div>
+        <h3>Snack gecko hot viral</h3>
+        <p class="price">Rp 45.000</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+        <div class="product-card" data-category="makanan">
+        <div class="product-img img-food-kucing1"></div>
+        <h3>makanan kucing</h3>
+        <p class="price">Rp 30.000</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+
+    <!-- Produk 3 (Baris 97 - Pastikan datanya "aksesoris") -->
+    <div class="product-card" data-category="aksesoris">
+        <div class="product-img img-acc-bola"></div>
+        <h3>Mainan Bola Rajut</h3>
+        <p class="price">Rp 15.000</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+        <div class="product-card" data-category="aksesoris">
+        <div class="product-img img-acc-gunting"></div>
+        <h3>Gunting kuku anabul</h3>
+        <p class="price">Rp 25.000</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+            <div class="product-card" data-category="aksesoris">
+        <div class="product-img img-acc-alat"></div>
+        <h3>Alat makan hewan peliharaan</h3>
+        <p class="price">Rp 25.000</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+            <div class="product-card" data-category="aksesoris">
+        <div class="product-img img-acc-kalung"></div>
+        <h3>kalung hewan peliharaan</h3>
+        <p class="price">Rp 25.000</p>
+        <button class="btn-buy">Beli Sekarang</button>
+    </div>
+
+</div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 PetShopku. Hak Cipta Dilindungi.</p>
+    </footer>
+<script>
+    // Mengambil semua elemen tombol dan kartu produk
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // 1. Hapus class 'active' dari tombol lama, lalu pindahkan ke tombol yang baru di-klik
+            document.querySelector('.filter-btn.active').classList.remove('active');
+            button.classList.add('active');
+
+            // 2. Ambil nama target kategori dari tombol yang di-klik
+            const targetCategory = button.getAttribute('data-target');
+
+            // 3. Cocokkan dengan data-category milik kartu produk
+            productCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                // Jika tombol "Semua" di-klik atau kategorinya cocok, tampilkan produknya
+                if (targetCategory === 'all' || targetCategory === cardCategory) {
+                    card.classList.remove('hide');
+                } else {
+                    // Jika tidak cocok, tambahkan class 'hide' untuk menyembunyikannya
+                    card.classList.add('hide');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
